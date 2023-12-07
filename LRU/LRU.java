@@ -133,7 +133,38 @@ public class LRUCache<K, V> {
         return res;
     }
 
+    /*
+        int n = 2; // LRU Cache size
+        String query = "get 1 set 3 C get 2";
 
+        LRUCache<Integer, String> cache = new LRUCache<>(n);
+        Scanner scanner = new Scanner(query);
+
+        while (scanner.hasNext()) {
+            String action = scanner.next();
+
+            switch (action) {
+                case "get":
+                    if (scanner.hasNextInt()) {
+                        int key = scanner.nextInt();
+                        System.out.println("get " + key + " -> " + cache.get(key));
+                    }
+                    break;
+                case "set":
+                    if (scanner.hasNextInt()) {
+                        int key = scanner.nextInt();
+                        if (scanner.hasNext()) {
+                            String value = scanner.next();
+                            cache.put(key, value);
+                            System.out.println("set " + key + " -> " + value);
+                        }
+                    }
+                    break;
+            }
+        }
+
+        scanner.close();
+    */
 
     public static void main(String[] args) {
         LRUCache<Integer, String> cache = new LRUCache<>(5);
