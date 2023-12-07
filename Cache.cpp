@@ -8,7 +8,6 @@ add, delete, contain, get last, get random
 1,2,3,4
 => 1,3,4
 */
-
 #include "bits/stdc++.h"
 
 using namespace std;
